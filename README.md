@@ -39,6 +39,12 @@ Le `ViewModel` ne remplace pas complètement la gestion de la mort du processus.
 
 ## Étapes de test manuel
 
+
+<img width="415" height="881" alt="Capture d&#39;écran 2026-05-07 230052" src="https://github.com/user-attachments/assets/2b00c2e7-5e93-4794-ac9e-e0565ca3cee8" />
+<img width="388" height="855" alt="Capture d&#39;écran 2026-05-07 230113" src="https://github.com/user-attachments/assets/b4961539-5100-4a07-ae94-e6b32948ec8c" />
+<img width="405" height="876" alt="Capture d&#39;écran 2026-05-07 230119" src="https://github.com/user-attachments/assets/791311c1-cddf-4298-9e25-df70763b26ba" />
+
+
 1. Insérer trois notes.
 2. Faire un clic long sur une note pour la supprimer.
 3. Fermer et rouvrir l'application pour vérifier la persistance.
