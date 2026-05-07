@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Déclare un fichier manifest Android encodé en UTF-8. -->
+<!-- Déclare le namespace android utilisé par les attributs Android. -->
+<!-- Déclare le namespace tools utilisé par Android Studio. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Déclare la configuration globale de l'application. -->
+    <!-- Autorise la sauvegarde des données de l'application. -->
+    <!-- Indique les règles d'extraction des données. -->
+    <!-- Indique les règles de sauvegarde complète. -->
+    <!-- Définit l'icône principale de l'application. -->
+    <!-- Définit le nom affiché de l'application. -->
+    <!-- Définit l'icône ronde de l'application. -->
+    <!-- Active la prise en charge des langues de droite à gauche. -->
+    <!-- Applique le thème visuel de l'application. -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RoomMVVMDemo">
+        <!-- Déclare l'activité principale dans le package ui. -->
+        <!-- Pointe vers com.example.roommvvmdemo.ui.MainActivity. -->
+        <!-- Rend l'activité accessible au launcher car elle a un intent-filter. -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <!-- Déclare les intentions qui lancent cette activité. -->
+            <intent-filter>
+                <!-- Indique que cette activité est le point d'entrée principal. -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- Indique que cette activité apparaît dans le lanceur d'applications. -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- Termine le filtre de lancement. -->
+        </activity>
+        <!-- Termine la déclaration de l'activité principale. -->
+    </application>
+    <!-- Termine la déclaration globale de l'application. -->
+</manifest>
+<!-- Termine le manifest Android. -->

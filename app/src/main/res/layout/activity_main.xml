@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Déclare un fichier XML de layout Android encodé en UTF-8. -->
+<!-- Utilise LinearLayout comme conteneur principal vertical. -->
+<!-- Donne au conteneur toute la largeur de l'écran. -->
+<!-- Donne au conteneur toute la hauteur de l'écran. -->
+<!-- Place les éléments les uns sous les autres. -->
+<!-- Ajoute un espace intérieur de 16dp autour du contenu. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!-- Crée un champ pour saisir le titre. -->
+    <!-- Donne l'identifiant etTitle au champ titre. -->
+    <!-- Donne au champ toute la largeur disponible. -->
+    <!-- Donne au champ la hauteur nécessaire à son contenu. -->
+    <!-- Affiche une aide quand le champ est vide. -->
+    <!-- Configure une saisie texte avec majuscule au début des phrases. -->
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titre de la note"
+        android:inputType="textCapSentences" />
+    <!-- Crée un champ pour saisir la description. -->
+    <!-- Donne l'identifiant etDescription au champ description. -->
+    <!-- Donne au champ toute la largeur disponible. -->
+    <!-- Donne au champ la hauteur nécessaire à son contenu. -->
+    <!-- Affiche une aide quand le champ est vide. -->
+    <!-- Autorise la saisie sur plusieurs lignes. -->
+    <!-- Garde au moins deux lignes visibles. -->
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description de la note"
+        android:inputType="textMultiLine"
+        android:minLines="2" />
+    <!-- Crée le bouton qui ajoute une note. -->
+    <!-- Donne l'identifiant btnAdd au bouton. -->
+    <!-- Donne au bouton toute la largeur disponible. -->
+    <!-- Donne au bouton la hauteur nécessaire à son texte. -->
+    <!-- Affiche le texte du bouton d'ajout. -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AJOUTER UNE NOTE" />
+    <!-- Crée le bouton qui supprime toutes les notes. -->
+    <!-- Donne l'identifiant btnDeleteAll au bouton. -->
+    <!-- Donne au bouton toute la largeur disponible. -->
+    <!-- Donne au bouton la hauteur nécessaire à son texte. -->
+    <!-- Affiche le texte du bouton de suppression totale. -->
+    <Button
+        android:id="@+id/btnDeleteAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUPPRIMER TOUTES LES NOTES" />
+    <!-- Crée la liste qui affichera les notes. -->
+    <!-- Donne l'identifiant recyclerView à la liste. -->
+    <!-- Donne à la liste toute la largeur disponible. -->
+    <!-- Met la hauteur à 0dp pour laisser le poids décider de la place. -->
+    <!-- Donne à la liste tout l'espace vertical restant. -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
+<!-- Termine le conteneur principal de l'écran. -->

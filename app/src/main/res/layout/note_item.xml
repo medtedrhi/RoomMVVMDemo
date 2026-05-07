@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Déclare un fichier XML de layout Android encodé en UTF-8. -->
+<!-- Utilise CardView comme racine pour afficher une note dans une carte. -->
+<!-- Ajoute le namespace app pour les propriétés spécifiques à CardView. -->
+<!-- Donne à la carte toute la largeur disponible. -->
+<!-- Donne à la carte la hauteur nécessaire à son contenu. -->
+<!-- Ajoute une marge de 8dp autour de chaque carte. -->
+<!-- Arrondit les coins de la carte à 12dp. -->
+<!-- Ajoute une ombre légère de 4dp à la carte. -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+    <!-- Crée un conteneur interne pour organiser le titre et la description. -->
+    <!-- Donne au conteneur toute la largeur de la carte. -->
+    <!-- Donne au conteneur la hauteur nécessaire à son contenu. -->
+    <!-- Place le titre au-dessus de la description. -->
+    <!-- Ajoute un espace intérieur de 16dp dans la carte. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- Crée le texte qui affiche le titre de la note. -->
+        <!-- Donne l'identifiant tvTitle au texte du titre. -->
+        <!-- Donne au titre toute la largeur disponible. -->
+        <!-- Donne au titre la hauteur nécessaire à son texte. -->
+        <!-- Affiche le titre avec une taille de 18sp. -->
+        <!-- Affiche le titre en gras. -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <!-- Crée le texte qui affiche la description de la note. -->
+        <!-- Donne l'identifiant tvDescription au texte de description. -->
+        <!-- Donne à la description toute la largeur disponible. -->
+        <!-- Donne à la description la hauteur nécessaire à son texte. -->
+        <!-- Affiche la description avec une taille de 14sp. -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- Termine le conteneur interne de la carte. -->
+</androidx.cardview.widget.CardView>
+<!-- Termine la carte représentant une seule note. -->
